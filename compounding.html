@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="gb2312">    
+        <title>复利计算</title>
+        <link rel="stylesheet" href="compounding.css">
+    </head>
+    <body>
+        <div class="main">
+            <lable>本金：</lable>
+            <input id="capital" type="text" autofocus required="required"/>
+            <span>(元)*</span>       
+            <br/>
+            <div id="capital-validation-message"></div>
+            <lable>利率：</lable>
+            <input id="rate" type="text" required="required"/>
+            <span>(%)*</span>
+            <br/>
+            <div id="rate-validation-message"></div>
+            <lable>投资年限：</lable>
+            <input id="time" type="text" required="required"/>
+            <span>(年)*</span>
+            <br/>
+            <div id="time-validation-message"></div>
+            <input id="calculate" type="button" value="计算"/>
+            <br/>
+            <lable>利息收入：</lable>
+            <input id="income" type="text" disabled/>
+            <br/>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="compounding.js"></script>
+        <script src="calc.js"></script>
+    </body>
+</html>
