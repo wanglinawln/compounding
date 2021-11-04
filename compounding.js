@@ -8,7 +8,7 @@ $(function(){
         $income=$('#income');
 
     $btnCal.click(function(){
-        //ȥ�����㺯��
+        //È¥µô¸¡µãº¯Êý
         function roundFractional(x, n) {
             return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
         }

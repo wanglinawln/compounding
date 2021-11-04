@@ -12,21 +12,21 @@ function validate(filed){
         $msg=$(filed+'-validation-message');
     //validate null
     if($data.val()===''){
-        $msg.html('²»ÄÜÎª¿Õ');
+        $msg.html('ä¸èƒ½ä¸ºç©º');
         $data.select();
         return false;
     }
     
     //validate number
     if(!(/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?/.test($data.val()))){
-        $msg.html('±ØĞëÊÇÊıÖµ');
+        $msg.html('å¿…é¡»æ˜¯æ•°å€¼');
         $data.select();
         return false;
     }
     
     //validate >0
     if($data.val()<0){
-        $msg.html('±ØĞë´óÓÚÁã');
+        $msg.html('å¿…é¡»å¤§äºé›¶');
         $data.select();
         return false;
     }
